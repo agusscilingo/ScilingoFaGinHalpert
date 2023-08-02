@@ -1,16 +1,22 @@
 import { useContext } from "react";
-import { dataContext } from "../Context/DataContent";
+import { dataContext } from "../Context/DataContext";
+import "./Products.css";
 
 
 const Products = () => {
-    const { data } = useContext(dataContext);
+    const { data, Carrito, setCarrito } = useContext(dataContext);
+
+    const buyProducts = (product) => {
+        setCarrito([...Carrito, product]);
+    };
+
     return data.map((product) => {
         return (
-            <div className="card">
-                <img src={product.img} alt="prodcard" />
+            <div className="card" key={product.id}>
+                <img src={product.img} alt="img-product-card" />
                 <h3>{product.name}</h3>
-                <h4>{product.price}$</h4>
-                <button>BUY</button>
+                <h4>{product.price}</h4>
+                <button onClick={() => buyProducts(product)}>BUY</button>
             </div>
         );
     });
