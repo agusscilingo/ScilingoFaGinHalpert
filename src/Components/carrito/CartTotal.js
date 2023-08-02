@@ -9,7 +9,7 @@ const CartTotal = () => {
     const total = Carrito.reduce((acc, el) => acc + el.price, 0);
     return (
         <div className="cartTotal">
-        <h3>Total: {total} $</h3>
+        <h3>Total: {total}</h3>
     </div>
     );
 };
