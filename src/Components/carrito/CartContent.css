@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 .cartContent {
     display: flex;
     justify-content: space-around;
@@ -13,9 +15,13 @@
 
 .cartTotal{
     text-align: center;
+    font-family: 'Raleway' , sans-serif;
 }
 
 .cart-message-center{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
+    color: rgb(101, 133, 54);
+    font-size: 20px;
+    font-family: 'Raleway' , sans-serif; 
 }

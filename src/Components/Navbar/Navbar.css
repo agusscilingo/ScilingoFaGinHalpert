@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+
 .nav-container {
     position: sticky;
     z-index: 3;
@@ -8,15 +12,16 @@
     display: flex;
     justify-content: space-between;
     height: 15vh;
-    background-color: black;
+    background-color: white;
 }
 
 .navbar-logo {
     justify-self: start;
     margin-left: 20px;
-    color: white;
+    color: rgb(101, 133, 54);
     margin-top: 4vh;
     cursor: pointer;
+    font-family: 'Raleway' , sans-serif;
 }
 
 .seeCarrito {

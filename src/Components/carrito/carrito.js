@@ -16,7 +16,7 @@ const Carrito = () => {
       <CartElements />
       <CartTotal />
     </>) : (
-    <h2 className="cart-message-center">Tu carrito está vacío</h2>
+    <h2 className="cart-message-center">TU CARRITO ESTÁ VACÍO</h2>
   )
 };
 
