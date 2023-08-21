@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
+import Navbar from "../Navbar/Navbar";
 
 
 import CartElements from "./CartElements";
@@ -10,14 +11,19 @@ const Carrito = () => {
 
   const { Carrito } = useContext(dataContext);
 
-
-  return Carrito.length > 0 ? (
+  return (
     <>
-      <CartElements />
-      <CartTotal />
-    </>) : (
-    <h2 className="cart-message-center">TU CARRITO ESTÁ VACÍO</h2>
-  )
+      <Navbar />
+      {Carrito.length > 0 ? (
+        <>
+          <CartElements />
+          <CartTotal />
+        </>
+      ) : (
+        <h2 className="cart-message-center">TU CARRITO ESTÁ VACÍO</h2>
+      )}
+    </>
+  );
 };
 
 export default Carrito;

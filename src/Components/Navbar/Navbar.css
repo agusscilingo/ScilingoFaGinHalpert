@@ -24,6 +24,10 @@
     font-family: 'Raleway' , sans-serif;
 }
 
+.navbar a {
+    text-decoration: none;
+}
+
 .seeCarrito {
     font-size: 25px;
     margin-right: 20px;

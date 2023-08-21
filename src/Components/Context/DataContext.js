@@ -1,17 +1,25 @@
-import { createContext, useState, useEffect } from "react";
-import axios from "axios";
+import { createContext, useState } from "react";
 
 export const dataContext = createContext();
 
 const DataProvider = ({ children }) => {
-    const [data, setData] = useState([]);
+    
     const [Carrito, setCarrito] = useState([]);
 
-    useEffect(() => {
-        axios("data.json").then((res) => setData(res.data));
-    }, []);
+    
 
-    return <dataContext.Provider value={{ data, Carrito, setCarrito }}>{children}</dataContext.Provider>;
+    const buyProducts = (product) => {
+        const productrepeat = Carrito.find((item) => item.id === product.id);
+
+        if (productrepeat) {
+            setCarrito(Carrito.map((item) => (item.id === product.id ? { ...product, quanty: productrepeat.quanty + 1 } : item)));
+        } else {
+            setCarrito([...Carrito, product]);
+        }
+
+    };
+
+    return <dataContext.Provider value={{ Carrito, setCarrito, buyProducts }}>{children}</dataContext.Provider>;
 };
 
 
