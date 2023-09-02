@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+.product-card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px;
+    text-align: center;
+    background-color: white;  
+    font-family: 'Raleway' , sans-serif;
+    font-size: 18px;
+}
+
+.card {
+    margin: 50px;
+}
+
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: rgb(101, 133, 54);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Raleway' , sans-serif;
+}
+.card button:hover{
+    opacity: 0.7;
+}

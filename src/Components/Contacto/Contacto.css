@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+.field {
+    margin: auto;
+    font-family: 'Raleway' , sans-serif;
+    background-color: rgb(101, 133, 54);
+    
+  }
+  
+  .field label {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Raleway' , sans-serif;
+  }
+  
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;   
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Raleway' , sans-serif;
+  }
+
+  .field textarea {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 20px;
+    background-color:white;
+    color: rgb(101, 133, 54);
+    border: none;
+    margin: auto;
+  }

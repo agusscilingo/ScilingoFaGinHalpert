@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+.cartContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.cartContent>img {
+    height: 120px;
+    width: 150px;
+    text-align: center;
+}
+
+.cartTotal {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+
+.cart-message-center {
+    text-align: center;
+    margin-top: 60px;
+    color: rgb(101, 133, 54);
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.counter-button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-delete-button {
+    cursor: pointer;
+}
